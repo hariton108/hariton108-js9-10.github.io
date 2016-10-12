@@ -1,0 +1,228 @@
+h3 {
+	color: #707080;
+	font-family: Verdana;
+	text-align: center;
+}
+
+.jcarousel-wrapper {
+	margin: 20px auto;
+    position: relative;
+    border: 10px solid #fff;
+    width: 600px;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #999;
+}
+
+.jcarousel {
+	position: relative;
+    overflow: hidden;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+}
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 200px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+	border-radius: 30px;
+	box-shadow: 0 0 2px #999;
+}
+
+.jcarousel-control-prev {
+    left: -50px;
+}
+
+.jcarousel-control-next {
+    right: -50px;
+}
+
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+    opacity: .5;
+    cursor: default;
+}
+
+.jcarousel-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 14px;
+    min-width: 14px;   
+    background: #fff;
+    color: #4E443C;
+    border-radius: 14px;
+    padding: 3px;
+    text-align: center;    
+    margin-right: 2px;
+    opacity: .75;
+}
+
+.jcarousel-pagination a.active {
+    background: #4E443C;
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+}
+
+.select-wrapper {
+	text-align: center;
+}
+
+.checkboxes-wrapper {
+	text-align: center;
+}
+
+.niceCheck {
+	display: inline-block;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    background: url('../img/checkbox-sprite.png');
+    overflow: hidden;
+}
+
+.niceChecked {
+    background-position: 0 -17px;
+}
+
+.niceCheck input {
+    margin-left: -100px;
+}
+
+.niceCheckDisabled {
+	opacity: .5;
+}
+
+.css input {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+
+.css label:after {
+    content: " ";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url('../img/checkbox-sprite.png');
+    position: relative;
+    cursor: pointer;
+}
+
+.css input:checked + label:after {
+	background-position: 0 -17px;
+}
+
+.css input[disabled] + label:after {
+	opacity: .5;
+}
+
+nav {
+	background-color: rgb(225, 75, 75);
+}
+
+nav ul {
+	width: 80%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+nav ul li { 
+	display: inline-block;
+	position: relative;
+}
+
+nav a {
+	display: block;
+	padding: 0 20px;
+	color: #fff;
+	text-decoration: none;
+	line-height: 40px;
+}
+
+nav li ul {    
+    background-color: rgb(225, 75, 75);
+    position:absolute;
+    left:0;
+    top:40px;
+    width:200px;
+    padding: 0;
+}
+
+nav li li {
+    position:relative;
+    margin:0;
+    display:block;
+}
+
+nav li li ul {
+    position:absolute;
+    top:0;
+    left:200px;
+    margin:0;
+}
+
+nav a {
+    line-height:40px;
+    padding:0 12px;
+    margin:0 12px;
+}
+
+nav a {
+    color:#fff;
+    text-decoration:none;
+    display:block;
+}
+
+nav li li a {
+    margin:0 10px;
+    padding:0;
+}
+nav li li:last-child a {
+    border-bottom: none;
+}
+
+nav li.dropdown > a {
+    background-image: url('../img/arrow-down.png');
+    background-position: right 20px;
+    background-repeat: no-repeat;
+}
+
+nav li li.dropdown > a {
+    background-image: url('../img/arrow-right.png');
+    background-position: right 16px;
+    background-repeat: no-repeat;
+}
+
+ul.submenu {
+    display:none;
+}
+
+.content {
+	height: 500px;
+	background-color: #ccc;
+}
